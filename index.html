@@ -133,8 +133,8 @@
                     <h3>{{post.title}}</h3>
                     <!-- content -->
                     <p>{{post.content}}</p>
-                    <template v-if="posts.imgrUrl">
-                      <img :src="posts.imgrUrl" class="img-fluid" />
+                    <template v-if="post.imgUrl">
+                      <img :src="post.imgUrl" class="img-fluid" />
                     </template>
                   </li>
                 </template>
