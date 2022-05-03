@@ -11,6 +11,9 @@ var app = new Vue({
     this.getPosts();
   },
   methods: {
+    getTime(time){
+      return dayjs(time).format('YYYY-MM-DD hh:mm')
+    },
     getPosts() {
       const api = `${baseUrl}/posts`; // ?timeSort=asc&q=超讚
       console.log("getPosts");
